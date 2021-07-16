@@ -55,7 +55,7 @@ $capsule->bootEloquent();
 `composer dump-autoload`
 
 
-5. Create App/Models strucutre
+5. Create App/Models structure
 
 6. Create Artist Data Model
 
@@ -81,7 +81,7 @@ $artist = Artist::all();
 print_r(json_encode($artist->toArray()));
 ```
 
-** start server ***
+**start server**
 
 ```php -S localhost:8080```
 
@@ -112,6 +112,9 @@ print_r(json_encode($artist->toArray()));
   }
 ]
 ```
+
+## Setup PHP GraphQL Server
+
 
 
 
