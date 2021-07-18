@@ -1,4 +1,7 @@
 <?php
+    /*
+    This is the main GraphQL Entry Point.  This is whare data comes in from the browser and passed over to the GraphQL Server
+    */
 
     use GraphQL\GraphQL;
     use GraphQL\Type\Schema;
