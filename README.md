@@ -116,5 +116,9 @@ print_r(json_encode($artist->toArray()));
 ## Setup PHP GraphQL Server
 
 
+1. Install GraphQL via Composer
 
+```bash
+composer require webonyx/graphql-php
+```
 

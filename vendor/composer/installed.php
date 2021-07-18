@@ -1,24 +1,24 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '840d6670415de070d66da1f871656e19fe7fb609',
     'name' => '__root__',
   ),
   'versions' => 
   array (
     '__root__' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '840d6670415de070d66da1f871656e19fe7fb609',
     ),
     'doctrine/inflector' => 
     array (
@@ -247,6 +247,15 @@
       array (
       ),
       'reference' => '80953678b19901e5165c56752d087fc11526017c',
+    ),
+    'webonyx/graphql-php' => 
+    array (
+      'pretty_version' => 'v14.9.0',
+      'version' => '14.9.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '36b83621deb5eae354347a2e86dc7aec81b32a82',
     ),
   ),
 );

@@ -51,6 +51,10 @@ class ComposerStaticInit0c2cd8c710aae7788081da06e1a30197
             'Illuminate\\Contracts\\' => 21,
             'Illuminate\\Container\\' => 21,
         ),
+        'G' => 
+        array (
+            'GraphQL\\' => 8,
+        ),
         'D' => 
         array (
             'Doctrine\\Inflector\\' => 19,
@@ -139,6 +143,10 @@ class ComposerStaticInit0c2cd8c710aae7788081da06e1a30197
         'Illuminate\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/container',
+        ),
+        'GraphQL\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/webonyx/graphql-php/src',
         ),
         'Doctrine\\Inflector\\' => 
         array (
