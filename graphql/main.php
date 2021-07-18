@@ -8,10 +8,11 @@
 
     require('objects.php');
     require('query.php');
+    require('mutation.php');
 
     $schema = new Schema([
         'query'     => $rootQuery,
-        'mutation'  => null
+        'mutation'  => $rootMutation
     ]);
 
     try{
