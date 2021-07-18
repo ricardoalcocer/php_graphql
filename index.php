@@ -1,8 +1,7 @@
 <?php
     require('vendor/autoload.php');
 
-use App\Models\Artist;
-use Illuminate\Database\Capsule\Manager as Capsule;
+    use Illuminate\Database\Capsule\Manager as Capsule;
 
     $capsule = new Capsule;
 
@@ -21,3 +20,4 @@ use Illuminate\Database\Capsule\Manager as Capsule;
     $capsule->bootEloquent();
 
     require('./graphql/main.php');
+
