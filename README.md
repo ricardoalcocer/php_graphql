@@ -122,3 +122,8 @@ print_r(json_encode($artist->toArray()));
 composer require webonyx/graphql-php
 ```
 
+2. Add GraphQL Folder and create 3 main GraphQL Files
+    - main.php
+    - objects.php
+    - query.php
+

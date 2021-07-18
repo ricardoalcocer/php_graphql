@@ -3,7 +3,7 @@
     use GraphQL\GraphQL;
     use GraphQL\Type\Schema;
 
-    require('objectTypes.php');
+    require('objects.php');
     require('query.php');
 
     $schema = new Schema([
