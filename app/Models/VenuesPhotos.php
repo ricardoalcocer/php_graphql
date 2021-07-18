@@ -7,5 +7,8 @@
     class VenuesPhotos extends Model{
         protected $table    = 'venues_photos';
         public $timestamps  = false;
-        protected $fillable = ['venue_id','url','description'];
+        protected $fillable = [
+            'venue_id',
+            'url',
+            'description'];
     }

@@ -17,10 +17,14 @@
             'format_id',
             'start_at',
             'end_at',
-            'max_attendees'
+            'max_attendees',
         ];
 
         public function artist(){
             return $this->belongsTo(Artist::class, 'artist_id');
         }
+
+        public function format(){
+            return $this->belongsTo(EventFormats::class, 'format_id');
+        }       
     }
