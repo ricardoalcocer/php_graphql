@@ -20,3 +20,4 @@
     $capsule->bootEloquent();
 
     require('./graphql/main.php');
+

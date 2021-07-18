@@ -25,5 +25,9 @@
             'postal_code',
             'lat',
             'lon'];
+
+        public function events(){
+            return $this->hasMany(Events::class);
+        }
     }
         
