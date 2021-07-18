@@ -101,7 +101,7 @@ $rootMutation = new ObjectType([
         'deleteArtist' => [
             'type' => $artistType,
             'args' => [
-                'id'                            => Type::nonNull(Type::id()) //required
+                'id'                                    => Type::nonNull(Type::id()) //required
             ],
             'resolve' => function($root, $args) {
                 $artist                                 = Artist::find($args['id']);
