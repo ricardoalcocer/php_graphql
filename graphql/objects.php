@@ -1,10 +1,8 @@
 <?php
 
 use App\Models\Artist;
-use App\Models\Events;
 use GraphQL\Type\Definition\ObjectType;
 use GraphQL\Type\Definition\Type;
-use Illuminate\Support\Facades\Event;
 
 $artistType = new ObjectType([
         'name'                              => 'Artist',
