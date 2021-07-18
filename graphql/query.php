@@ -17,7 +17,17 @@ $rootQuery = new ObjectType([
                 $thisArtist = Artist::find($args['id'])->toArray();
                 return $thisArtist;
             }
-        ]
+        ],
+        'artists' => [
+            'type' => Type::listOf($artistType),
+            'args'          => [
+                'first'     => Type::int(),
+                'skip'      => Type::int()
+            ],
+            'resolve' => function($root,$args){
+                $artists = Artist::all()->skip($args['skip'])->take($args['first'])->toArray();
+                return $artists;
+            }
         ]
     ]
-);
+]);
