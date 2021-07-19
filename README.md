@@ -71,7 +71,16 @@ Alco - [@ricardoalcocer](https://twitter.com/ricardoalcocer) - alco@musicasaa.co
 
 
 
+1. Install GraphQL via Composer
 
+```bash
+composer require webonyx/graphql-php
+```
+
+2. Add GraphQL Folder and create 3 main GraphQL Files
+    - main.php
+    - objects.php
+    - query.php
 
 # PHP + GraphQL Starter
 

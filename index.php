@@ -1,7 +1,6 @@
 <?php
     require('vendor/autoload.php');
 
-    use App\Models\Artist;
     use Illuminate\Database\Capsule\Manager as Capsule;
 
     $capsule = new Capsule;
@@ -20,6 +19,5 @@
     $capsule->setAsGlobal();
     $capsule->bootEloquent();
 
-    $artist = Artist::all();
+    require('./graphql/main.php');
 
-    print_r(json_encode($artist->toArray()));
