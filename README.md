@@ -1,120 +1,79 @@
+
+  <h3 align="center">PHP-ELOQUENT-MYSQL Starter Project</h3>
+
+
+  <div align="center">
+    <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome Badge"/>
+    <img src="https://img.shields.io/badge/-GraphQL-E10098?style=flat-square&logo=graphql" alt="GraphQL Badge"/>
+    <img src="https://img.shields.io/badge/-MySQL-black?style=flat-square&logo=mysql" alt="MySQL Badge">
+    <img src="https://img.shields.io/badge/-PHP-blue?style=flat-square&logo=php" alt="PHP Badge">
+    <img src="https://img.shields.io/badge/-apache-red?style=flat-square&logo=apache" alt="Apache Badge">
+</div>
+
+</p>
+
+<!-- ABOUT THE PROJECT -->
+### About The Project
+
+This repo contains a tutorial I made to demonstrate how easy it is to implement a GraphQL API using PHP and MySQL.
+
+This repository is divided into 6 branches, designed to guide you step by step and make the code easier to understand.
+
+### [Branch Step 1](https://github.com/ricardoalcocer/php_graphql/tree/step1)
+
+Setting up your basic PHP project with Eloquen ORM and properly connected to your MySQL database.  This branch alone could be your starting point for any PHP-MySql application.
+
+
+### [Branch Step 2](https://github.com/ricardoalcocer/php_graphql/tree/step2)
+
+We now to the basics of GraphQL and setup 1 simple call by Id.
+
+### [Branch Step 3](https://github.com/ricardoalcocer/php_graphql/tree/step3)
+
+Here we add a method to get all records, with LIMIT and OFFSET functionality.
+
+### [Branch Step 4](https://github.com/ricardoalcocer/php_graphql/tree/step4)
+
+Now we create GraphQL Mutations.
+
+### [Branch to Step 5](https://github.com/ricardoalcocer/php_graphql/tree/step5)
+
+In this step we create some relationships between data.
+
+### [Branch to Step 6](https://github.com/ricardoalcocer/php_graphql/tree/step6)
+
+We finalize implementing the ramining relationships.
+
+### TO-DO
+
+- [ ] Add gueries and mutations for remaining tables.
+
+## Built With
+
+* [Eloquent](https://laravel.com/docs/8.x/eloquent)
+* [GraphQL-PHP](https://github.com/webonyx/graphql-php)
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See [alco.mit-license.org](alco.mit-license.org).
+
+## Acknowledgements
+
+* Readme file inspired by [https://github.com/abhisheknaiidu/awesome-github-profile-readme/blob/master/README.md](https://github.com/abhisheknaiidu/awesome-github-profile-readme/blob/master/README.md)
+
+
+<!-- CONTACT -->
+## Contact
+
+Alco - [@ricardoalcocer](https://twitter.com/ricardoalcocer) - alco@musicasaa.com
+
+
+
+
+
+
+
 # PHP + GraphQL Starter
-
-## Setup PHP Project with Eloquent ORM
-
-1. Install Illuminate via Composer
-
-`https://packagist.org/packages/illuminate/database`
-
-```bash
-composer require illuminate/database
-```
-
-2. Add boilerplate code
-
-```php
-
-require('vendor/autoload.php');
-use Illuminate\Database\Capsule\Manager as Capsule;
-
-$capsule = new Capsule;
-
-$capsule->addConnection([
-    'driver' => 'mysql',
-    'host' => 'localhost',
-    'database' => 'database',
-    'username' => 'root',
-    'password' => 'password',
-    'charset' => 'utf8',
-    'collation' => 'utf8_unicode_ci',
-    'prefix' => '',
-]);
-
-$capsule->setAsGlobal();
-$capsule->bootEloquent();
-```
-
-3. Setup psr-4 autoloading
-
-```php
-{
-    "require": {
-        "illuminate/database": "^8.50"
-    },
-    "autoload": {
-        "psr-4": {
-            "App\\": "app"
-        }
-    }
-}
-```
-
-
-4. Dump Autoload
-
-`composer dump-autoload`
-
-
-5. Create App/Models structure
-
-6. Create Artist Data Model
-
-```php
-namespace App\Models;
-
-use Illuminate\Database\Eloquent\Model;
-
-
-class Artist extends Model{
-    protected $table    = 'artists';
-    public $timestamps  = false;
-    protected $fillable = ['bio','email','stagename','fname','lname','phone','avatar','formatted_address','street_number','route','sublocality_level_1','locality','administrative_area_level_1','country','postal_code','lat','lon'];
-}     
-```
-
-7. Test DB Connection
-
-**Add code to dump data**
-
-```php
-$artist = Artist::all();
-print_r(json_encode($artist->toArray()));
-```
-
-**start server**
-
-```php -S localhost:8080```
-
-**Output**
-
-```json
-[
-  {
-    "id": 182,
-    "bio": "Foxfire is a rock-opera-classical fusion band from L.A.",
-    "email": "foxfire@gmail.com",
-    "stagename": "Foxfire",
-    "fname": "Fox",
-    "lname": "Fire",
-    "phone": "(408) 123-4567",
-    "avatar": null,
-    "formatted_address": null,
-    "street_number": null,
-    "route": "",
-    "sublocality_level_1": null,
-    "locality": null,
-    "administrative_area_level_1": null,
-    "country": null,
-    "postal_code": null,
-    "lat": null,
-    "lon": null,
-    "timestamp": "2021-07-01 07:34:07"
-  }
-]
-```
-
-## Setup PHP GraphQL Server
-
 
 
 
