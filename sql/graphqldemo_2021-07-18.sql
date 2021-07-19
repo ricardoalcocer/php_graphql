@@ -7,7 +7,7 @@
 #
 # Host: mysql.ricardoalcocer.com (MySQL 5.7.28-log)
 # Database: graphqldemo
-# Generation Time: 2021-07-16 9:45:28 PM +0000
+# Generation Time: 2021-07-19 12:30:02 AM +0000
 # ************************************************************
 
 
@@ -46,14 +46,15 @@ CREATE TABLE `artists` (
   `lon` varchar(15) DEFAULT NULL,
   `timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=183 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=185 DEFAULT CHARSET=utf8mb4;
 
 LOCK TABLES `artists` WRITE;
 /*!40000 ALTER TABLE `artists` DISABLE KEYS */;
 
 INSERT INTO `artists` (`id`, `bio`, `email`, `stagename`, `fname`, `lname`, `phone`, `avatar`, `formatted_address`, `street_number`, `route`, `sublocality_level_1`, `locality`, `administrative_area_level_1`, `country`, `postal_code`, `lat`, `lon`, `timestamp`)
 VALUES
-	(182,'Foxfire is a rock-opera-classical fusion band from L.A.','foxfire@gmail.com','Foxfire','Fox','Fire','(408) 123-4567','https://rickandmortyapi.com/api/character/avatar/193.jpeg',NULL,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2021-07-01 07:34:07');
+	(182,'Foxfire is a rock-opera-classical fusion band from L.A.','foxfire@gmail.com','Foxfire','Fox','Fire','(408) 123-4567','https://rickandmortyapi.com/api/character/avatar/193.jpeg',NULL,NULL,'',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2021-07-01 07:34:07'),
+	(184,'old new bio','old new email',NULL,'the first name',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2021-07-18 11:46:39');
 
 /*!40000 ALTER TABLE `artists` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -78,14 +79,16 @@ CREATE TABLE `events` (
   `max_attendees` int(11) DEFAULT NULL,
   `timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;
 
 LOCK TABLES `events` WRITE;
 /*!40000 ALTER TABLE `events` DISABLE KEYS */;
 
 INSERT INTO `events` (`id`, `guid`, `host_id`, `artist_id`, `venue_id`, `name`, `description`, `format_id`, `start_at`, `end_at`, `max_attendees`, `timestamp`)
 VALUES
-	(6,'bef513f1-fc14-4522-8458-4b3d442a8191',5,182,1,'My Great Event','This will be the best event you\'ll ever attend',4,'2021-07-01 07:33:09','2021-07-01 07:33:09',40,'2021-07-01 07:33:09');
+	(6,'bef513f1-fc14-4522-8458-4b3d442a8191',5,182,4,'My Great Event','This will be the best event you\'ll ever attend',4,'2021-07-01 07:33:09','2021-07-01 07:33:09',40,'2021-07-01 07:33:09'),
+	(8,'bef513f1-fc14-4522-8458-4b3d442a8191',5,184,4,'My Great Event 2','This will be the best event you\'ll ever attend',5,'2021-07-01 07:33:09','2021-07-01 07:33:09',40,'2021-07-01 07:33:09'),
+	(9,'bef513f1-fc14-4522-8458-4b3d442a8191',5,182,4,'My Great Last Event','This will be the best event you\'ll ever attend',4,'2021-07-01 07:33:09','2021-07-01 07:33:09',40,'2021-07-01 07:33:09');
 
 /*!40000 ALTER TABLE `events` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -211,7 +214,7 @@ LOCK TABLES `venues_photos` WRITE;
 
 INSERT INTO `venues_photos` (`id`, `venue_id`, `url`, `description`, `timestamp`)
 VALUES
-	(3,3,'https://image.shutterstock.com/image-photo/moscow-march-13-2016-inside-600w-409245415.jpg','Burger King Interior','2021-07-16 14:38:06');
+	(3,4,'https://image.shutterstock.com/image-photo/moscow-march-13-2016-inside-600w-409245415.jpg','Burger King Interior','2021-07-16 14:38:06');
 
 /*!40000 ALTER TABLE `venues_photos` ENABLE KEYS */;
 UNLOCK TABLES;
