@@ -38,11 +38,11 @@ Here we add a method to get all records, with LIMIT and OFFSET functionality.
 
 Now we create GraphQL Mutations.
 
-### [Branch to Step 5](https://github.com/ricardoalcocer/php_graphql/tree/step5)
+### [Branch Step 5](https://github.com/ricardoalcocer/php_graphql/tree/step5)
 
 In this step we create some relationships between data.
 
-### [Branch to Step 6](https://github.com/ricardoalcocer/php_graphql/tree/step6)
+### [Branch Step 6](https://github.com/ricardoalcocer/php_graphql/tree/step6)
 
 We finalize implementing the ramining relationships.
 
