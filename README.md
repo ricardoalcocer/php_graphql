@@ -23,6 +23,8 @@ This repository is divided into 6 branches, designed to guide you step by step a
 
 Setting up your basic PHP project with Eloquen ORM and properly connected to your MySQL database.  This branch alone could be your starting point for any PHP-MySql application.
 
+Grab the SQL Script to create a new database and tables from [here](https://github.com/ricardoalcocer/php_graphql/blob/master/sql/graphqldemo_2021-07-18.sql).
+
 
 ### [Branch Step 2](https://github.com/ricardoalcocer/php_graphql/tree/step2)
 
